@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color:#3199ab;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#weather{
+
+    background-image: url(../images/france.svg);
+    background-size: cover;
+}
+
+.view {
+    height: 100vh;
+    padding: 50px 0px;
+    background-color: rgba(49, 153, 171, 0.575);
+}
+
+ .search {
+    width: 40%;
+}
+
+#search-bar {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+}
+#search-bar:focus {
+    outline: none;
+}
+
+.temp-card {
+    /* width: 35%; */
+    padding: 0 !important;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.temp-card:not(:first-of-type){
+    background-color: #5b8b92;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.temp-card:not(:first-of-type):hover {
+    background-color: var(--main-color);
+}
+
+.day {
+    background-color: #313c41;
+    color: #bfc1c8;
+    padding: 10px 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.day p {
+    margin: 0 !important;
+}
+
+.temp-datails {
+   padding: 30px 20px;
+   font-size: x-large;
+   font-weight: bold;
+    color: #fff;
+}
+
+#location {
+    text-align: center;
+}
+
+/* start footer  */
+
+footer {
+    background-color: #374850;
+    padding: 20px 0;
+}
+
+footer i {
+   
+    cursor: pointer;
+}
+
+footer a i:hover {
+    color: var(--main-color) !important;
+}
+
+/* End footer */
+
+/* start media  */
+
+@media (max-width :686px){
+    .temp-card {
+        width: 85%;
+        padding: 5%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .search {
+        width: 70%;
+    }
+    .view {
+        height:fit-content !important;
+    }
+    
+}
