@@ -109,7 +109,7 @@ footer a i:hover {
 
 /* start media  */
 
-@media (max-width :686px){
+@media (max-width :991px){
     .temp-card {
         width: 85%;
         padding: 5%;
